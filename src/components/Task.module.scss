@@ -1,0 +1,68 @@
+.task {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: var(--gray-500);
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  padding: 16px;
+
+  p {
+    margin-right: auto;
+    margin-left: 0.75rem;
+    font-size: 0.875rem;
+    line-height: 19.6px;
+  }
+}
+
+.unchecked {
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: transparent;
+  border: 2px solid var(--blue);
+
+  &:hover {
+    border-color: var(--blueDark);
+    background: #0c1c26;
+  }
+}
+
+.checked {
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--purpleDark);
+  border: none;
+  color: var(--gray-100);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--purple);
+  }
+}
+
+.textCompleted {
+  color: var(--gray-300);
+  text-decoration-line: line-through;
+}
+
+.deleteTask {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  color: var(--gray-300);
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.75rem;
+  svg {
+    margin-top: 3px;
+  }
+
+  &:hover {
+    color: var(--danger);
+    background: var(--gray-400);
+  }
+}
